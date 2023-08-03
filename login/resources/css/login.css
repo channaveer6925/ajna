@@ -7,7 +7,7 @@
 
 .login-pf body {
   /* background: url("../img/kc-demo.jpg") no-repeat center center fixed; */
-  background-color: black;
+  background: black;
   background-size: cover;
   height: 100%;
 }
@@ -490,12 +490,29 @@ ul#kc-totp-supported-apps {
   margin: 0 auto;
   box-shadow: var(--pf-global--BoxShadow--lg);
   padding: 0 20px;
-  max-width: 500px;
+  max-width: 400px;
   background: #18191b;
   color: #ffffff;
   border-radius: 25px;
 }
-
+/* custom */
+.pf-c-button.pf-m-primary {
+  color: #ffffff;
+  background-color: #7a68e9;
+  border-radius: 50px;
+  padding: 8px 24px;
+}
+.pf-c-form-control:not(textarea) {
+  background: #242528;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  margin-top: 5px;
+}
+#kc-info-wrapper {
+  background: none;
+  color: #ffffff;
+}
 /*phone*/
 @media (max-width: 767px) {
   .login-pf-page .card-pf {
