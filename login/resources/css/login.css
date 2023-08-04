@@ -508,6 +508,7 @@ ul#kc-totp-supported-apps {
   outline: none;
   color: #ffffff;
   margin-top: 5px;
+  background-repeat: no-repeat !important;
 }
 #kc-info-wrapper {
   background: none;

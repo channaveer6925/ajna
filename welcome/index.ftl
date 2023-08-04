@@ -31,10 +31,6 @@
 
     <link rel="shortcut icon" href="${resourcesPath}/img/favicon.ico" />
 
-    <style>
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
-</style>
-
     <#if properties.stylesCommon?has_content>
         <#list properties.stylesCommon?split(' ') as style>
             <link href="${resourcesCommonPath}/${style}" rel="stylesheet" />
