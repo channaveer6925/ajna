@@ -14131,7 +14131,10 @@ label.pf-c-check,
 }
 
 .pf-c-form__label-text {
-  font-weight: var(--pf-c-form__label-text--FontWeight);
+  /* font-weight: var(--pf-c-form__label-text--FontWeight); */
+  font-weight: 400;
+  font-family: Roboto, sans-serif;
+  font-size: 12px;
 }
 
 .pf-c-form__label-required {
@@ -36898,5 +36901,5 @@ svg.pf-c-spinner.pf-m-xl {
 }
 
 .pf-c-form__label-text {
-  font-weight: 500 !important;
+  font-weight: 400 !important;
 }

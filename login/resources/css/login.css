@@ -1,6 +1,7 @@
 /* Patternfly CSS places a "bg-login.jpg" as the background on this ".login-pf" class.
    This clashes with the "keycloak-bg.png' background defined on the body below.
    Therefore the Patternfly background must be set to none. */
+
 .login-pf {
   background: none;
 }
@@ -10,6 +11,7 @@
   background: black;
   background-size: cover;
   height: 100%;
+  /* border: 2px solid red; */
 }
 
 textarea.pf-c-form-control {
@@ -35,6 +37,7 @@ h1#kc-page-title {
   font-weight: 500;
   line-height: 39px;
   letter-spacing: 0em;
+  font-family: Roboto, sans-serif;
 }
 
 #kc-locale ul {
@@ -64,9 +67,9 @@ a#kc-current-locale-link::after {
   margin-left: var(--pf-global--spacer--xs);
 }
 
-.login-pf .container {
+/* .login-pf .container {
   padding-top: 40px;
-}
+} */
 
 .login-pf a:hover {
   color: #0099d3;
@@ -99,7 +102,7 @@ div.kc-logo-text span {
   text-transform: uppercase;
   letter-spacing: 3px;
   line-height: 1.2em;
-  padding: 62px 10px 20px;
+  padding: 10px 20px;
   white-space: normal;
 }
 
@@ -109,7 +112,7 @@ div.kc-logo-text span {
 
 #kc-attempted-username {
   font-size: 20px;
-  font-family: inherit;
+  font-family: Roboto, sans-serif;
   font-weight: normal;
   padding-right: 10px;
 }
