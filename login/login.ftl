@@ -23,7 +23,6 @@
                                     <span id="input-error-username" class="${properties.kcInputErrorMessageClass!}" aria-live="polite">
                                         ${kcSanitize(messagesPerField.get('username'))?no_esc}
                                     </span>
-                                </#if>
                             </div>
                         </#if>
 
