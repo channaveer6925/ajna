@@ -513,12 +513,13 @@ ul#kc-totp-supported-apps {
   padding: 8px 24px;
 }
 .pf-c-form-control:not(textarea) {
-  background: #242528;
+  background: #18191b;
   border: none;
   outline: none;
   color: #ffffff;
   margin-top: 5px;
   background-repeat: no-repeat !important;
+  border-bottom: 1px solid #242528;
 }
 #kc-info-wrapper {
   background: none;
