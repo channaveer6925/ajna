@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  background-color: #000;
+  background-color: #fff;
   margin: 0;
   padding: 0;
   height: 100%;
@@ -13,6 +13,7 @@ body {
 header .navbar {
   margin-bottom: 0;
   min-height: inherit;
+  background-color: #fff;
 }
 
 .header .container {
@@ -20,12 +21,16 @@ header .navbar {
 }
 
 .navbar-title {
-  background-image: url(https://temp.ajnavidya.com/ajnavidya/ajnavidyaLogo.svg);
+  background-image: url(https://temp.ajnavidya.com/ajnavidya/AjnavidyaBlackLogo.svg);
   height: 36px;
   background-repeat: no-repeat;
   width: auto;
   margin: 16px 10px 5px;
   text-indent: -99999px;
+}
+.form-control {
+  font-size: 14px;
+  font-family: Roboto, sans-serif;
 }
 
 .navbar-pf .navbar-utility {
@@ -33,27 +38,59 @@ header .navbar {
   top: -34px;
   font-size: 12px;
 }
+.table > thead > tr > td {
+  font-size: 14px !important;
+  font-family: Roboto, sans-serif;
+}
+.table > tbody > tr > td {
+  font-size: 14px !important;
+  font-family: Roboto, sans-serif;
+}
+.navbar-pf {
+  border-top: none !important;
+}
 
 .navbar-pf .navbar-utility > li > a {
-  color: #fff !important;
+  color: #000 !important;
   padding-bottom: 12px;
   padding-top: 11px;
   border-left: medium none;
   font-size: 18px;
   font-weight: 500;
 }
+p {
+  color: #505256;
+  font-family: Roboto, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+ol li {
+  margin-bottom: 10px;
+  position: relative;
+  color: #505256;
+  font-family: Roboto, sans-serif;
+  font-size: 14px !important;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
 
 .container {
   height: 100%;
+  background-color: #fff;
 }
 
 .content-area {
-  background: #18191b;
+  /* background: #18191b; */
   /* border-color: #cecece; */
-  border-style: solid;
-  border-width: 0 1px;
+  /* border-style: solid;
+  border-width: 0 1px; */
   height: 100%;
   padding: 0 30px;
+  border: 1px solid #cecece;
+  height: auto;
 }
 
 .margin-bottom {
@@ -63,7 +100,7 @@ header .navbar {
 /* Sidebar */
 
 .bs-sidebar {
-  background: #18191b;
+  /* background: #18191b; */
   padding-top: 44px;
   padding-right: 0;
   padding-left: 0;
@@ -79,31 +116,34 @@ header .navbar {
   margin-left: -1em;
 }
 .bs-sidebar ul li a {
-  font-size: 14px;
+  font-size: 16px;
   padding-left: 25px;
-  color: #ffffff;
+  color: rgba(0, 0, 0, 0.87);
   line-height: 28px;
   display: block;
-  border-width: 1px 0 1px 1px;
+  /* border-width: 1px 0 1px 1px;
   border-style: solid;
-  border-color: #2425;
+  border-color: #2425; */
   font-family: Roboto, sans-serif;
 }
 .bs-sidebar ul li a:hover,
 .bs-sidebar ul li a:focus {
   text-decoration: none;
   color: #777777;
-  border-right: 2px solid #aaa;
 }
 .bs-sidebar ul li.active a {
   /* background-color: #070707; */
-  border-color: #242528;
+
   font-weight: bold;
-  background-image: url(../img/icon-sidebar-active.png);
+  background-image: url("../img/arrowRight.svg");
   background-repeat: no-repeat;
   background-position: right center;
+  background-color: #e2ddfe;
+  border-radius: 50px;
+  padding: 9px 26px;
+  width: 84%;
 }
-
+/* arrowRight.svg */
 .bs-sidebar ul li.active a:hover {
   border-right: none;
 }
@@ -114,8 +154,8 @@ header .navbar {
   font-size: 24px;
   margin-bottom: 25px;
   margin-top: 25px;
-  color: #ffffff;
-  font-weight: 500;
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: 600;
 }
 
 .subtitle {
@@ -171,14 +211,22 @@ header .navbar {
 }
 
 .form-horizontal .control-label {
-  color: #ffffff;
-  line-height: 1.4em;
+  /* color: #000; */
+  /* line-height: 1.4em; */
   padding-top: 5px;
   position: relative;
   text-align: right;
   width: 100%;
   font-size: 12px;
   font-weight: 400;
+  color: #6c6f74;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  text-transform: capitalize;
+  text-align: left;
 }
 
 .form-group {
@@ -195,10 +243,50 @@ header .navbar {
   text-align: right;
   margin-top: 10px;
 }
-
-#kc-form-buttons .btn-primary {
+.btn-default {
   float: right;
   margin-left: 8px;
+  border-radius: 50px;
+  padding: 12px 24px;
+  font-family: Roboto, sans-serif;
+  background-color: #fff !important;
+  color: #6c56fb;
+  border: 1px solid #6c56fb;
+  background-image: none !important;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+}
+.btn-default:hover {
+  background-color: none !important;
+  color: #6c56fb;
+  border: 1px solid #6c56fb;
+}
+
+#kc-form-buttons .btn-primary {
+  padding: 12px 24px;
+  border-radius: 50px;
+  background: #6c56fb;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  color: #fff;
+}
+.navbar-pf .navbar-utility > li > a {
+  border-radius: 50px;
+  padding: 12px 24px;
+  font-family: Roboto, sans-serif;
+  background-color: #6c56fb !important;
+  color: #fff !important;
+  background-image: none !important;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  margin-top: -13px;
 }
 
 /* Authenticator page */
@@ -281,3 +369,5 @@ hr + .form-horizontal {
   padding: 10px;
   margin: 50px 0;
 }
+/* @media screen(max-width:600px) {
+} */

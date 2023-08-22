@@ -6,13 +6,52 @@
 .login-pf {
   background: none;
 }
+.btnCont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 34.5px;
+  font-family: Roboto, sans-serif;
+  margin-top: 2rem;
+}
+#signup {
+  width: 50%;
+  border-radius: 75px;
+  background: #6c56fb;
+}
+.backBtn {
+  color: #161719;
+  display: flex;
+  /* padding: 0px 36px; */
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  border-radius: 75px;
+  border: 1.5px solid var(--primary-color-primary-dark-mode, #7a68e9);
+}
+.backBtn a {
+  color: #161719;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 34.5px;
+  font-family: Roboto, sans-serif;
+}
+.backBtn a:hover {
+  text-decoration: none !important;
+  color: #161719 !important;
+}
 
 .login-pf body {
   /* background: url("../img/kc-demo.jpg") no-repeat center center fixed; */
   background: black;
   background-size: cover;
   height: 100%;
-  /* border: 2px solid red; */
 }
 
 textarea.pf-c-form-control {
@@ -34,11 +73,12 @@ p.instruction {
 
 h1#kc-page-title {
   margin-top: 10px;
-  font-size: 32px;
+  font-size: 31px;
   font-weight: 600;
   line-height: 39px;
   letter-spacing: 0em;
   font-family: Roboto, sans-serif;
+  text-align: left;
 }
 
 #kc-locale ul {
@@ -110,6 +150,7 @@ div.kc-logo-text span {
 
 #kc-content {
   width: 100%;
+  padding-right: 1.5rem;
 }
 
 #kc-attempted-username {
@@ -177,6 +218,8 @@ div.kc-logo-text span {
 
 #kc-form-options span {
   display: block;
+
+  margin-left: 200px;
 }
 
 #kc-form-options .checkbox {
@@ -451,13 +494,12 @@ ul#kc-totp-supported-apps {
 
 .login-pf-page {
   width: 100%;
-  background-color: #7a68e9;
+  background-color: #6c56fb;
   padding-top: 20px;
-  height: 100vh;
+  height: 100%;
 }
-.login-dummy-text {
-  background-color: red !important;
-}
+/*  */
+
 .login-pf-page .login-pf-brand {
   margin-top: 20px;
   max-width: 360px;
@@ -517,10 +559,13 @@ ul#kc-totp-supported-apps {
   margin: 0 auto;
   box-shadow: var(--pf-global--BoxShadow--lg);
   padding: 0 20px;
-  width: 35%;
+  width: 33%;
   background: #ffffff;
   color: #18191b;
   /* border-radius: 25px; */
+}
+.kcBodyClass {
+  border: 2px solid yellow !important;
 }
 .card-pf {
   display: flex;
@@ -532,28 +577,39 @@ ul#kc-totp-supported-apps {
 .mainContainer {
   display: flex;
   flex-direction: column;
-  /* color: red !important; */
-  /* border: 1px solid red; */
   padding-left: 6%;
   margin-top: 6rem;
-  width: 30%;
+  width: 34%;
 }
 .title {
   color: #fff;
   font-family: Roboto, sans-serif;
-  font-size: 32px;
+  font-size: 38px;
   font-style: normal;
   font-weight: 600;
   line-height: 42px;
   padding-right: 10px;
+}
+.imgCont {
+  width: 882.69px;
+  height: 392.25px;
+  position: absolute;
+  bottom: 0;
+}
+.imgCont img {
+  height: 100%;
+  width: 58%;
+  object-fit: cover;
+  aspect-ratio: 1.5/1;
 }
 
 .createTestBublish {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 68%;
+  width: 75%;
   margin: 1rem 0 2.5rem 0;
+  /* background-color: rgb(25, 23, 23) !important; */
 }
 .commontext {
   color: #fff;
@@ -571,6 +627,17 @@ ul#kc-totp-supported-apps {
   border-radius: 50%;
   fill: none;
 }
+.login-pf-page .login-pf-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+}
+#header {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: -34px;
+}
 .create {
   display: flex;
   padding: 10px 15px 20px 20px;
@@ -579,10 +646,10 @@ ul#kc-totp-supported-apps {
   align-items: flex-start;
   gap: 5px;
   border-radius: 20px;
-  background: rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(41px);
   color: #ffffff;
   width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(41px);
 }
 .createTitle {
   font-size: 20px;
@@ -603,6 +670,7 @@ ul#kc-totp-supported-apps {
   font-style: normal;
   font-weight: 500;
   line-height: 20px;
+  margin-top: 16px;
 }
 
 .login-pf-page .login-pf-signup a {
@@ -613,13 +681,14 @@ ul#kc-totp-supported-apps {
 /* custom */
 .pf-c-button.pf-m-primary {
   color: #ffffff;
-  background-color: #7a68e9;
+  background-color: #6c56fb;
   border-radius: 50px;
   padding: 8px 24px;
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
   line-height: 23px;
+  position: relative;
 }
 .pf-c-form-control:not(textarea) {
   background: #ffffff;
@@ -721,6 +790,9 @@ ul#kc-totp-supported-apps {
   display: inline-block;
   margin-right: 1px;
 }
+#kc-content-wrapper {
+  margin-top: 20px;
+}
 
 .kc-recovery-codes-actions {
   margin-bottom: 24px;
@@ -736,14 +808,86 @@ ul#kc-totp-supported-apps {
   align-items: baseline;
   margin-bottom: 16px;
 }
-
-#kc-infoDiv {
-  background-color: red !important;
-  color: red;
+.mobileHeader {
+  display: none;
 }
+.mobileView {
+  display: none;
+}
+@media (min-width: 1280px) {
+  .mainContainer {
+    margin-top: 0px !important;
+  }
+  #kc-content-wrapper {
+    margin-top: -11px;
+  }
+  .form-group {
+    margin-bottom: 0px;
+  }
+  .login-pf-page {
+    height: 100vh;
+  }
+}
+@media (max-width: 1540px) {
+  .title {
+    font-size: 31;
+  }
+}
+
 /* End Recovery codes */
 @media (min-width: 992px) {
   .col-md-10 {
     width: 100%;
   }
 }
+@media (max-width: 600px) {
+  .desktopView {
+    display: none;
+  }
+  .login-pf-page .card-pf {
+    width: 100%;
+    padding: 1rem 3rem;
+    margin-top: -2rem;
+    /* margin-bottom: 2rem; */
+  }
+  #kc-content {
+    padding-right: 0;
+  }
+  .login-pf-page .login-pf-header {
+    margin-bottom: 0;
+  }
+  .pf-c-form__label {
+    margin-top: 0;
+  }
+  .mobileView {
+    display: block;
+    width: auto !important;
+    height: 50px;
+  }
+  .mobileView img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* @media (max-width: 600px) {
+  .mainContainer {
+    display: none !important;
+  }
+  .imgCont {
+    border: 1px solid red !important;
+  }
+
+  .card-pf {
+    width: 100%;
+  }
+  .mobileHeader {
+    display: flex !important;
+    flex-direction: column;
+    background-color: #6c56fb;
+    font-size: 12px !important;
+  }
+  .login-pf-page {
+    background-color: #000;
+  }
+} */

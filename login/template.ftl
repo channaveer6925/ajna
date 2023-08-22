@@ -42,24 +42,29 @@
         <div id="kc-header-wrapper"
              class="${properties.kcHeaderWrapperClass!}">${kcSanitize(msg("loginTitleHtml",(realm.displayNameHtml!'')))?no_esc}</div>
     </div>
-     <div class="mainContainer">
-           <h3 class="title">Namaskaram! Welcome to AjnaVidya Developer Hub.</h3>
+    <div class="desktopView">
+            <div class="mainContainer">
+                <h3 class="title">Namaskaram! Welcome to AjnaVidya</h3>
 
-            <div class="createTestBublish">
-                <span class="commontext">Create</span>
-                <span class="dot"></span>
-                <span class="commontext">Test</span>
-                <span class="dot"></span>
-                <span class="commontext">Publish</span>
+                    <div class="createTestBublish">
+                        <span class="commontext"> Create </span>
+                        <span class="dot"> </span>
+                        <span class="commontext">Distribute</span>
+                        <span class="dot"> </span>
+                        <span class="commontext"> Experience </span>
+                    </div>
             </div>
-
-            <div class="create">
-             <h3 class="createTitle">Create</h3>
-             <span class="createDesc"> Create experiences using our SDKs, resources and with the help of our tutorials and API references.</span>
+        
+            <div class="imgCont">
+                <img src="https://dev.ajnavidya.com/ajnavidya/ajnavidyaGlassMorficLogo.png"/>
             </div>
-      </div>
-    <div class="${properties.kcFormCardClass!}">
-        <header class="${properties.kcFormHeaderClass!}">
+    </div>
+    
+    <div class="${properties.kcFormCardClass!}" id="form">
+            <div class="mobileView">
+            <img src="https://temp.ajnavidya.com/ajnavidya/AjnavidyaBlackLogo.svg" alt="LinearGradientColorStop2"/>
+            </div>
+        <header class="${properties.kcFormHeaderClass!}" id="header">
             <#if realm.internationalizationEnabled  && locale.supported?size gt 1>
                 <div class="${properties.kcLocaleMainClass!}" id="kc-locale">
                     <div id="kc-locale-wrapper" class="${properties.kcLocaleWrapperClass!}">
